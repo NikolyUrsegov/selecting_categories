@@ -356,7 +356,7 @@ export const slice = createSlice({
     name: 'optionsDirections',
     initialState: initialState,
     reducers: {
-        changeCategoryOptions(state, action: PayloadAction<{category: CategoryType }>) {
+        changeCategoryOptions(state, action: PayloadAction<{ category: CategoryType }>) {
             state.category = action.payload.category
         }
     },

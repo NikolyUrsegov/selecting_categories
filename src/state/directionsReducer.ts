@@ -76,10 +76,10 @@ export const slice = createSlice({
     name: 'directions',
     initialState: initialState,
     reducers: {
-        changeActiveDirection(state, action: PayloadAction<{code: string }>) {
+        changeActiveDirection(state, action: PayloadAction<{ code: string }>) {
             state.activeDirection = action.payload.code
         },
-        changeCategoryDirection(state, action: PayloadAction<{category: CategoryType }>) {
+        changeCategoryDirection(state, action: PayloadAction<{ category: CategoryType }>) {
             state.category = action.payload.category
         }
     }

@@ -11,7 +11,7 @@ import arrows from '../common/images/arrows.svg'
 
 function App() {
     const directions = useAppSelector(state => state.directions.directions)
-    const OptionsDirectionType = useAppSelector(state => state.optionsDirections.activeOptions)
+    const optionsDirectionType = useAppSelector(state => state.optionsDirections.activeOptions)
     const categoryDirections = useAppSelector(state => state.directions.category)
     const categoryFilter = useAppSelector(state => state.optionsDirections.category)
     const dispatch = useDispatch()
@@ -44,7 +44,7 @@ function App() {
             />
             <Select
                 title={'Получаете'}
-                options={OptionsDirectionType}
+                options={optionsDirectionType}
                 onChangeOptions={onChangeOptionsDirections}
                 category={categoryFilter}
                 setCategory={setCategoryFilter}/>
