@@ -2,7 +2,7 @@ import React, {ChangeEvent} from 'react';
 import s from './Select.module.scss'
 import {DirectionType} from "../../state/directionsReducer";
 import {CategoryType} from "../../state/optionsDirectionsReducer";
-import {sort} from "../../utils/sort";
+import {sort} from "../../common/utils/sort";
 
 type SelectPropsType = {
     title?: string

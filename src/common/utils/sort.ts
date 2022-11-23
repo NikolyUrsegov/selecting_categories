@@ -1,4 +1,4 @@
-import {DirectionType} from "../state/directionsReducer";
+import {DirectionType} from "../../state/directionsReducer";
 
 export const sort = (arrFilter: string[], arr: DirectionType[]) => {
     if (arr.length !== 0) {
