@@ -1,5 +1,5 @@
 import React, {ChangeEvent} from 'react';
-import './App.css';
+import s from  './App.module.css';
 import {Select} from "../components/select/Select";
 import {useAppSelector} from "../state/store";
 import {useDispatch} from 'react-redux'
@@ -19,7 +19,7 @@ function App() {
     }
 
     const onChangeOptionsDirections = (e: ChangeEvent<HTMLSelectElement>) => {
-        // какой то код .....
+        // функция для работы со вторым селектом
     }
 
     const setCategoryFilter = (category: CategoryType) => {
@@ -32,7 +32,7 @@ function App() {
 
 
     return (
-        <div className={'App'}>
+        <div className={s.app}>
             <Select
                 title={'Отдаете'}
                 options={directions}
