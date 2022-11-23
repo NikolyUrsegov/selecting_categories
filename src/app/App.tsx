@@ -1,10 +1,12 @@
 import React, {ChangeEvent} from 'react';
-import s from  './App.module.css';
+import s from './App.module.scss';
 import {Select} from "../components/select/Select";
 import {useAppSelector} from "../state/store";
 import {useDispatch} from 'react-redux'
 import {changeActiveDirection, changeCategoryDirection} from "../state/directionsReducer";
 import {CategoryType, changeCategoryOptions} from "../state/optionsDirectionsReducer";
+import {backgroundStyle} from "../common/utils/backgroundStyle";
+import arrows from '../common/images/arrows.svg'
 
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
     return (
         <div className={s.app}>
             <Select
-                title={'Отдаете'}
+                title={'Отдаёте'}
                 options={directions}
                 onChangeOptions={onChangeDirections}
                 category={categoryDirections}
@@ -46,6 +48,9 @@ function App() {
                 onChangeOptions={onChangeOptionsDirections}
                 category={categoryFilter}
                 setCategory={setCategoryFilter}/>
+            <div className={s.changeBtn}>
+                <button style={backgroundStyle(arrows)}></button>
+            </div>
         </div>
     );
 }

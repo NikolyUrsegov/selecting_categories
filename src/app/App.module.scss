@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .changeBtn {
+    position: relative;
+    button {
+      position: absolute;
+      bottom: 230px;
+      left: 220px;
+      width: 60px;
+      height: 60px;
+      border: none;
+      border: none;
+      background: none;
+      transform: rotate(90deg);
+    }
+  }
+}
