@@ -1,0 +1,55 @@
+.block {
+  margin: 50px;
+
+  .title {
+    font-size: 32px;
+    color: rgb(239, 128, 127);
+  }
+
+  .filterBlock {
+    display: flex;
+    margin-bottom: 15px;
+
+    button {
+      min-width: 20px;
+      height: 40px;
+      padding: 10px;
+      background: none;
+      border: none;
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .active {
+      background: rgb(239, 128, 127);
+      color: white;
+      border-radius: 10px;
+    }
+  }
+
+  .inputBlock {
+    display: flex;
+
+    input {
+      width: 500px;
+      height: 60px;
+      padding-left: 15px;
+      border: 1px solid rgb(206, 212, 217);
+      outline: none;
+      border-radius: 10px 0 0 10px;
+      font-size: 22px;
+
+    }
+
+    select {
+      min-width: 250px;
+      height: 60px;
+      border: 1px solid rgb(206, 212, 217);
+      outline: none;
+      border-radius: 0 10px 10px 0;
+      font-size: 18px;
+    }
+  }
+}
